@@ -15,7 +15,7 @@ st.set_page_config(
 # -----------------------------------------------------------------------------
 # 2. LOAD THE TRAINED MODEL BUNDLE
 # -----------------------------------------------------------------------------
-MODEL_PATH = "bike_model_bundle.pkl"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "bike_model_bundle.pkl")
 
 
 @st.cache_resource
